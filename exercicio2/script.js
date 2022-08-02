@@ -13,3 +13,16 @@ const filme = {
 };
 
 // respostas aqui ⬇️
+console.log(filme);
+
+// Questão a
+console.log(filme.elenco[0]);
+
+// Questão b
+console.log(filme.elenco[3]);
+
+// Questão c
+console.log(filme.transmissoesHoje);
+
+//Questão d
+console.log(filme.transmissoesHoje[1]);
