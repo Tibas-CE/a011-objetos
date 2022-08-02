@@ -19,7 +19,7 @@ const fruta1 = {
 };
 
 //Adicione os objetos ao array `sacolao` utilizando o método **`push()`**
-sacolao.push(fruta, fruta0,fruta1);
+sacolao.push(fruta, fruta0, fruta1);
 
 //Imprima a o array `sacolao`
 console.log(sacolao);

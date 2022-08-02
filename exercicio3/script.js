@@ -1,15 +1,16 @@
 const pokemon1 = {
-	nome: "Bulbasaur",
-	tipo: "Grama",
-	nivel: 5
+    nome: "Bulbasaur",
+    tipo: "Grama",
+    nivel: 5
 };
-console.log("Original", pokemon1);
+console.log("Original:", pokemon1);
 
 // Questão a
-const copiaPokemon1 = {...pokemon1};
+//const copiaPokemon1 = {...pokemon1, nome: "Squirtle", tipo: "Água"};
+const copiaPokemon1 = { ...pokemon1 };
 copiaPokemon1.nome = "Squirtle";
 copiaPokemon1.tipo = "Água";
-console.log("Cópia", copiaPokemon1);
+console.log("Cópia:", copiaPokemon1);
 
 // Questão b
 pokemon1.ataques = [];
@@ -47,5 +48,5 @@ copiaPokemon1.ataques.push(poder1);
 //console.log("Adicionando objeto na array ataques (cópia)", copiaPokemon1);
 
 //Questão f
-console.log("Alterações no original", pokemon1);
-console.log("Alterações na cópia", copiaPokemon1);
+console.log("Alterações no original:", pokemon1);
+console.log("Alterações na cópia:", copiaPokemon1);
