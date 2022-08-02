@@ -6,10 +6,10 @@ const pokemon1 = {
 console.log("Original", pokemon1);
 
 // Questão a
-copiaPokemon = {...pokemon1};
-copiaPokemon.nome = "Squirtle";
-copiaPokemon.tipo = "Água";
-console.log("Cópia", copiaPokemon);
+const copiaPokemon1 = {...pokemon1};
+copiaPokemon1.nome = "Squirtle";
+copiaPokemon1.tipo = "Água";
+console.log("Cópia", copiaPokemon1);
 
 // Questão b
 pokemon1.ataques = [];
@@ -20,10 +20,11 @@ const poder = {
     precisao: 100
 };
 pokemon1.ataques.push(poder);
+//console.log("Adicionando array com 1 objeto ao original", pokemon1);
 
 //Questão c
-copiaPokemon = {...pokemon1.ataques};
-console.log(copiaPokemon);
+copiaPokemon1.ataques = [...pokemon1.ataques];
+//console.log("Adicionando array a cópia",copiaPokemon1);
 
 //Questão d
 const poder0 = {
@@ -33,6 +34,7 @@ const poder0 = {
     precisao: 100
 };
 pokemon1.ataques.push(poder0);
+//console.log("Adicionando objeto na array ataques (original)", pokemon1);
 
 //Questão e
 const poder1 = {
@@ -41,5 +43,9 @@ const poder1 = {
     tipo: "Água",
     precisao: 100
 };
-copiaPokemon.ataques.push(poder1);
-console.log("copia", copiaPokemon);
+copiaPokemon1.ataques.push(poder1);
+//console.log("Adicionando objeto na array ataques (cópia)", copiaPokemon1);
+
+//Questão f
+console.log("Alterações no original", pokemon1);
+console.log("Alterações na cópia", copiaPokemon1);
